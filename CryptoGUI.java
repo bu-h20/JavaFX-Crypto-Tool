@@ -52,7 +52,7 @@ private void styleComboBox(ComboBox<String> comboBox) {
         protected void updateItem(String item, boolean empty) {
             super.updateItem(item, empty);
             setText(empty ? null : item);
-            setFont(font);  // تطبيق الخط
+            setFont(font);  
         }
     });
 }
@@ -384,17 +384,6 @@ encryptButton.setOnAction(e -> {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         copyButton.setOnAction(e -> {
             String text = encryptedTextArea.getText();
             if (!text.isEmpty()) {
@@ -633,14 +622,6 @@ decryptButton.setOnAction(e -> {
         encryptedTextArea0.setText("Encryption error: " + ex.getMessage());
     }
 });
-
-
-
-
-
-
-
-
 
 
 
